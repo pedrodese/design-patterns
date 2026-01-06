@@ -4,7 +4,7 @@ import br.com.pedrodese.factory.simpleFactory.factory.IphoneFactory;
 import br.com.pedrodese.factory.simpleFactory.model.Iphone;
 
 //Classe principal que demonstra o uso do padrão Simple Factory
-public class Main {
+public class Client {
     public static void main(String[] args) {
         //Cliente utiliza apenas a factory para criar objetos
         //Não precisa conhecer as classes concretas (Iphone15, Iphone15Pro, etc)
