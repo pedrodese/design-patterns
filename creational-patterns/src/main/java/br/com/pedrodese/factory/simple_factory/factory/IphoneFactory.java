@@ -1,12 +1,14 @@
-package br.com.pedrodese.factory.simpleFactory.factory;
+package br.com.pedrodese.factory.simple_factory.factory;
 
-import br.com.pedrodese.factory.simpleFactory.model.*;
+import br.com.pedrodese.factory.simple_factory.model.*;
 
 //Classe responsável por encapsular a lógica de criação dos objetos iPhone
 //Implementa o padrão Simple Factory (Static Factory Method)
 public class IphoneFactory {
 
-    //Método estático que cria e retorna instâncias de iPhone baseado no modelo solicitado
+    private IphoneFactory() {}
+
+    //Metodo estático que cria e retorna instâncias de iPhone baseado no modelo solicitado
     //Recebe o nome do modelo e a capacidade de armazenamento como parâmetros
     //Retorna um objeto do tipo Iphone (classe abstrata), mas instancia as classes concretas
     public static Iphone createIphone(String model, int storage) {

@@ -1,4 +1,4 @@
-package br.com.pedrodese.factory.abstractFactory.client;
+package br.com.pedrodese.factory.abstract_factory.client;
 
 public class Client {
     public static void main(String[] args) {

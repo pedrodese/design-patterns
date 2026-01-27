@@ -1,4 +1,4 @@
-package br.com.pedrodese.factory.simpleFactory.model;
+package br.com.pedrodese.factory.simple_factory.model;
 
 //Classe abstrata que serve como base para todos os modelos de iPhone
 public abstract class Iphone {
@@ -22,7 +22,7 @@ public abstract class Iphone {
         this.price = price;
     }
 
-    //Método abstrato que obriga todas as subclasses a implementarem sua própria versão
+    //Metodo abstrato que obriga todas as subclasses a implementarem sua própria versão
     //Cada modelo de iPhone terá sua forma específica de exibir informações
     public abstract void displayInfo();
 

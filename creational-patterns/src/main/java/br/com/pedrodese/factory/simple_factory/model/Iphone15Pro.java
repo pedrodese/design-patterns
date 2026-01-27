@@ -1,4 +1,4 @@
-package br.com.pedrodese.factory.simpleFactory.model;
+package br.com.pedrodese.factory.simple_factory.model;
 
 //Classe concreta que representa o modelo iPhone 15 Pro
 //Estende Iphone e define características específicas deste modelo

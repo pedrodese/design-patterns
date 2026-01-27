@@ -1,4 +1,4 @@
-package br.com.pedrodese.factory.simpleFactory.model;
+package br.com.pedrodese.factory.simple_factory.model;
 
 //Classe concreta que representa o modelo top de linha iPhone 15 Pro Max
 //Herda de Iphone e implementa as características do modelo mais avançado

@@ -1,4 +1,4 @@
-package br.com.pedrodese.factory.simpleFactory.model;
+package br.com.pedrodese.factory.simple_factory.model;
 
 //Classe concreta, que estende a classe abstrata Iphone, mas alterando seus atributos através do construtor
 public class Iphone15 extends Iphone {
@@ -13,7 +13,7 @@ public class Iphone15 extends Iphone {
                 4999.00);
     }
 
-    //Método abstrato que foi herdado da classe Iphone, porem ao ser
+    //Metodo abstrato que foi herdado da classe Iphone, porem ao ser
     @Override
     public void displayInfo() {
         System.out.println("=== " + getModel() + " ===");
