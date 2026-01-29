@@ -14,9 +14,9 @@ public class IphoneFactory {
     public static Iphone createIphone(String model, int storage) {
         //Switch que determina qual classe concreta instanciar baseado no modelo solicitado
         return switch (model) {
-            case "iphone 15" -> new Iphone15(storage); //Cria e retorna uma instância de Iphone15 com o storage especificado
-            case "iphone 15 pro" -> new Iphone15Pro(storage); //Cria e retorna uma instância de Iphone15Pro com o storage especificado
-            case "iphone 15 pro max" -> new Iphone15ProMax(storage);  //Cria e retorna uma instância de Iphone15ProMax com o storage especificado
+            case "iPhone 15" -> new Iphone15(storage); //Cria e retorna uma instância de Iphone15 com o storage especificado
+            case "iPhone 15 pro" -> new Iphone15Pro(storage); //Cria e retorna uma instância de Iphone15Pro com o storage especificado
+            case "iPhone 15 pro max" -> new Iphone15ProMax(storage);  //Cria e retorna uma instância de Iphone15ProMax com o storage especificado
             default -> throw new IllegalArgumentException("Unknown model: " + model);
         };
     }
