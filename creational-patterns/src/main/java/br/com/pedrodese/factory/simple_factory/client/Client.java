@@ -3,8 +3,13 @@ package br.com.pedrodese.factory.simple_factory.client;
 import br.com.pedrodese.factory.simple_factory.factory.IphoneFactory;
 import br.com.pedrodese.factory.simple_factory.model.Iphone;
 
+import java.util.logging.Logger;
+
 //Classe principal que demonstra o uso do padrão Simple Factory
 public class Client {
+
+    private static final Logger logger = Logger.getLogger(Client.class.getName());
+
     public static void main(String[] args) {
         //Cliente utiliza apenas a factory para criar objetos
         //Não precisa conhecer as classes concretas (Iphone15, Iphone15Pro, etc)
@@ -22,10 +27,10 @@ public class Client {
         //Exibe as informações de cada iPhone criado
         //Chama o metodo displayInfo() que foi implementado em cada classe concreta
         iphone1.displayInfo();
-        System.out.println(); //Linha em branco para separação visual
+        logger.info("-----------------------------------");
 
         iphone2.displayInfo();
-        System.out.println();
+        logger.info("-----------------------------------");
 
         iphone3.displayInfo();
     }

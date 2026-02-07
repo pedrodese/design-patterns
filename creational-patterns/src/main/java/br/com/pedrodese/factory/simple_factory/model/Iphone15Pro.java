@@ -1,8 +1,13 @@
+// src/main/java/br/com/pedrodese/factory/simple_factory/model/Iphone15Pro.java
 package br.com.pedrodese.factory.simple_factory.model;
+
+import java.util.logging.Logger;
 
 //Classe concreta que representa o modelo iPhone 15 Pro
 //Estende Iphone e define características específicas deste modelo
 public class Iphone15Pro extends Iphone {
+
+    private static final Logger logger = Logger.getLogger(Iphone15Pro.class.getName());
 
     //Construtor que recebe apenas o storage (armazenamento)
     //Os demais atributos são fixos para este modelo específico
@@ -22,13 +27,13 @@ public class Iphone15Pro extends Iphone {
     @Override
     public void displayInfo() {
         //Exibe todas as especificações do dispositivo usando os getters herdados
-        System.out.println("=== " + getModel() + " ===");
-        System.out.println("Processor: " + getProcessor());
-        System.out.println("RAM: " + getRamMemory() + "GB");
-        System.out.println("Storage: " + getStorage() + "GB");
-        System.out.println("Camera: " + getCamera());
-        System.out.println("Price: $" + getPrice());
+        logger.info("=== " + getModel() + " ===");
+        logger.info("Processor: " + getProcessor());
+        logger.info("RAM: " + getRamMemory() + "GB");
+        logger.info("Storage: " + getStorage() + "GB");
+        logger.info("Camera: " + getCamera());
+        logger.info("Price: $" + getPrice());
         //Mensagem adicional específica para a versão Pro
-        System.out.println("** PRO version with advanced features **");
+        logger.info("** PRO version with advanced features **");
     }
 }

@@ -1,7 +1,11 @@
 package br.com.pedrodese.factory.simple_factory.model;
 
+import java.util.logging.Logger;
+
 //Classe concreta, que estende a classe abstrata Iphone, mas alterando seus atributos através do construtor
 public class Iphone15 extends Iphone {
+
+    private static final Logger logger = Logger.getLogger(Iphone15.class.getName());
 
     //Construtor com atributos do Iphone15
     public Iphone15(int storage) {
@@ -16,11 +20,11 @@ public class Iphone15 extends Iphone {
     //Metodo abstrato que foi herdado da classe Iphone, porem ao ser
     @Override
     public void displayInfo() {
-        System.out.println("=== " + getModel() + " ===");
-        System.out.println("Processor: " + getProcessor());
-        System.out.println("RAM: " + getRamMemory() + "GB");
-        System.out.println("Storage: " + getStorage() + "GB");
-        System.out.println("Camera: " + getCamera());
-        System.out.println("Price: $" + getPrice());
+        logger.info("=== " + getModel() + " ===");
+        logger.info("Processor: " + getProcessor());
+        logger.info("RAM: " + getRamMemory() + "GB");
+        logger.info("Storage: " + getStorage() + "GB");
+        logger.info("Camera: " + getCamera());
+        logger.info("Price: $" + getPrice());
     }
 }

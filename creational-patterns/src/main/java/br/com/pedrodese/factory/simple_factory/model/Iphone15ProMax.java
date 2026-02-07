@@ -1,8 +1,12 @@
 package br.com.pedrodese.factory.simple_factory.model;
 
+import java.util.logging.Logger;
+
 //Classe concreta que representa o modelo top de linha iPhone 15 Pro Max
 //Herda de Iphone e implementa as características do modelo mais avançado
 public class Iphone15ProMax extends Iphone {
+
+    private static final Logger logger = Logger.getLogger(Iphone15ProMax.class.getName());
 
     //Construtor que recebe o armazenamento como parâmetro variável
     //Permite criar iPhone 15 Pro Max com diferentes capacidades de storage
@@ -17,18 +21,18 @@ public class Iphone15ProMax extends Iphone {
                 9999.00);
     }
 
-    //Sobrescreve o método abstrato displayInfo() da classe pai
+    //Sobrescreve o metodo abstrato displayInfo() da classe pai
     //Implementa a forma específica de exibir as informações do Pro Max
     @Override
     public void displayInfo() {
         //Utiliza os métodos getters para acessar e exibir os atributos privados
-        System.out.println("=== " + getModel() + " ===");
-        System.out.println("Processor: " + getProcessor());
-        System.out.println("RAM: " + getRamMemory() + "GB");
-        System.out.println("Storage: " + getStorage() + "GB");
-        System.out.println("Camera: " + getCamera());
-        System.out.println("Price: $" + getPrice());
+        logger.info("=== " + getModel() + " ===");
+        logger.info("Processor: " + getProcessor());
+        logger.info("RAM: " + getRamMemory() + "GB");
+        logger.info("Storage: " + getStorage() + "GB");
+        logger.info("Camera: " + getCamera());
+        logger.info("Price: $" + getPrice());
         //Destaque especial indicando que é o modelo mais premium
-        System.out.println("** TOP OF THE LINE version **");
+        logger.info("** TOP OF THE LINE PRO MAX with exclusive features **");
     }
 }
