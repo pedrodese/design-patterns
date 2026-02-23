@@ -1,6 +1,7 @@
 package br.com.pedrodese.client;
 
 import br.com.pedrodese.factory.CatFactory;
+import br.com.pedrodese.factory.CowFactory;
 import br.com.pedrodese.factory.DogFactory;
 import br.com.pedrodese.factory.PetShopFactory;
 import br.com.pedrodese.products.animal.Animal;
@@ -19,6 +20,7 @@ public class Main {
         log.info("What pet do you want?");
         log.info("1 - Dog");
         log.info("2 - Cat");
+        log.info("3 - Cow");
         log.info("\nYour choice: ");
 
         int clientChoice = scanner.nextInt();
@@ -44,6 +46,7 @@ public class Main {
         return switch (choice) {
             case 1 -> new DogFactory();
             case 2 -> new CatFactory();
+            case 3 -> new CowFactory();
             default -> throw new IllegalStateException("Invalid value: " + choice);
         };
     }
